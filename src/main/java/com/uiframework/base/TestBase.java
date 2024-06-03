@@ -17,18 +17,19 @@ public class TestBase {
     //getUrl()
     static WebDriver driver;
     static Properties prop;
-    public TestBase(){
-        try{
-            prop=new Properties();
-            FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"/Users/administrator/IdeaProjects/Demo/src/main/java/com/uiframework/config/testConfig.properties");
-            prop.load(fis);
-        }
-        catch (FileNotFoundException e){
-            e.printStackTrace();
-        }
-        catch (IOException e){
-            e.printStackTrace();
-        }
+    public TestBase() {
+//        try{
+//            prop=new Properties();
+//            //FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"/Users/administrator/IdeaProjects/Demo/src/main/java/com/uiframework/config/testConfig.properties");
+//            //prop.load(fis);
+//        }
+//        //catch (FileNotFoundException e){
+//            e.printStackTrace();
+//        }
+//        catch (IOException e){
+//            e.printStackTrace();
+//        }
+//
     }
     public static void initialization(){
         String browserName = prop.getProperty("browser");

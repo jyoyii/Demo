@@ -1,15 +1,11 @@
 package OopsConcepts;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-@Getter
-@Setter
-@AllArgsConstructor
+
 public class Employee implements IRetryAnalyzer {
     String ename;
     int eno;

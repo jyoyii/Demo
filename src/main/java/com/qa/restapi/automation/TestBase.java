@@ -1,6 +1,7 @@
 package com.qa.restapi.automation;
 
 
+
 import io.restassured.RestAssured;
 
 import java.io.FileInputStream;
@@ -11,6 +12,8 @@ import java.util.Properties;
 public class TestBase {
     public static Properties prop;
     public TestBase() {
+
+
         RestAssured.baseURI="https://reqres.in/";
         try{
             prop =new Properties();
